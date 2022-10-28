@@ -74,7 +74,7 @@ const Hero = () => {
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a
       className="email-link"
-      href="/resume.pdf"
+      href="/portfolio/resume.pdf"
       target="_blank"
       rel="noreferrer">
       Check out my resume!

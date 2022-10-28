@@ -77,7 +77,7 @@ const Footer = () => {
     if (process.env.NODE_ENV !== 'production') {
       return;
     }
-    fetch('https://api.github.com/repos/bchiang7/v4')
+    fetch('https://api.github.com/repos/vishalnarnaware/portfolio')
       .then(response => response.json())
       .then(json => {
         const { stargazers_count, forks_count } = json;
@@ -107,19 +107,6 @@ const Footer = () => {
       <StyledCredit tabindex="-1">
         <a href="https://github.com/vishalnarnaware">
           <div>Made with <span role="img" aria-label="Love">❤️</span> by Vishal Narnaware</div>
-
-          {githubInfo.stars && githubInfo.forks && (
-            <div className="github-stats">
-              <span>
-                <Icon name="Star" />
-                <span>{githubInfo.stars.toLocaleString()}</span>
-              </span>
-              <span>
-                <Icon name="Fork" />
-                <span>{githubInfo.forks.toLocaleString()}</span>
-              </span>
-            </div>
-          )}
         </a>
       </StyledCredit>
     </StyledFooter>
