@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://vishalnarnaware.github.io/sitemap.xml
+Host: https://vishalnarnaware.github.io
